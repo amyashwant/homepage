@@ -1,0 +1,350 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #4a90e2;
+    padding: 120px 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .hero-description {
+    font-size: 24px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #fff;
+    color: #4a90e2;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Features Section */
+  .features-section {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 24px 42px rgba(141, 55, 55, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* .feature-icon {
+    font-size: 36px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+
+  } */
+  
+  .feature-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4a90e2;
+  }
+  
+  .feature-description {
+    font-size: 16px;
+  }
+  
+  /* Benefits Section */
+  .benefits-section {
+    background-color: #fff;
+    padding: 80px 0;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .benefit {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .benefit-icon {
+    font-size: 36px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4a90e2;
+  }
+  
+  .benefit-description {
+    font-size: 16px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .hero {
+      padding: 80px 0;
+    }
+  
+    .hero-title {
+      font-size: 36px;
+    }
+  
+    .hero-description {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    .cta-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .features-grid,
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .feature,
+    .benefit {
+      padding: 30px 20px;
+      margin-bottom: 30px;
+    }
+  
+    .feature-icon {
+      width: 30px;
+      height: 20px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+  
+    .feature-title,
+    .benefit-title {
+      font-size: 20px;
+    }
+  
+    .feature-description,
+    .benefit-description {
+      font-size: 14px;
+    }
+  }
+  
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    padding: 60px 0;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  .footer-item {
+    color: #fff;
+  }
+  
+  .footer-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-links li {
+    margin-right: 10px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #4a90e2;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .subscribe-form input[type="email"] {
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+  }
+  
+  .subscribe-form button[type="submit"] {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-form button[type="submit"]:hover {
+    background-color: #3672b3;
+  }
+  
+  .footer-bottom {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .hero {
+      padding: 80px 0;
+    }
+  
+    .hero-title {
+      font-size: 36px;
+    }
+  
+    .hero-description {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    .cta-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .features-grid,
+    .benefits-grid,
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .feature,
+    .benefit,
+    .footer-item {
+      padding: 30px 20px;
+      margin-bottom: 30px;
+    }
+  
+    /* .feature-icon,
+    .benefit-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    } */
+  
+    .feature-title,
+    .benefit-title,
+    .footer-title {
+      font-size: 20px;
+    }
+  
+    .feature-description,
+    .benefit-description,
+    .footer-description {
+      font-size: 14px;
+    }
+  
+    .social-links li {
+      margin-right: 5px;
+    }
+  
+    .subscribe-form {
+      flex-direction: column;
+    }
+  
+    .subscribe-form input[type="email"] {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+  
+    .subscribe-form button
+
+
+
